@@ -496,7 +496,7 @@ footer {
   gap: 16px;
   width: 360px;
   height: 336px;
- position: relative;
+  position: relative;
 }
 
 .modal-form-input {
@@ -579,13 +579,21 @@ textarea {
   background-color: #4d5ae5;
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-container .form-icon-checkbox {
-fill:#ffffff
+.modal-form-checkbox:checked
+  + .modal-form-checkbox-container
+  .form-icon-checkbox {
+  fill: #ffffff;
 }
 
-.privacy-policy {
+.privacy-policy a {
   color: #404bbf;
-  text-underline
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy-policy a:hover,
+.privacy-policy a:active,
+.privacy-policy a:visited {
+  color: #4d5ae5;
 }
 
 .form-button {
@@ -604,47 +612,41 @@ fill:#ffffff
 .icon-close {
   width: 8px;
   height: 8px;
- }
+}
 
 .icon-close-space {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: #e7e9fc;
-border-radius: 50% 50%;
-width: 24px;
-height: 24px;
-top: -64px;
-right: 0;
-
-  }
+  background-color: #e7e9fc;
+  border-radius: 50% 50%;
+  width: 24px;
+  height: 24px;
+  top: -64px;
+  right: 0;
+}
 
 .email-input {
   width: 453px;
   height: 80px;
- font-size: 16px;
-padding-top: 100px;
- margin-right: 80px;
-  }
-
-
+  font-size: 16px;
+  padding-top: 100px;
+  margin-right: 80px;
+}
 
 .form-subscribe {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
 }
 .subscribe-email {
-background-color: transparent;
-border-color: #ffffff;
-color: #ffffff;
-width: 264px;
-height: 40px;
-
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  width: 264px;
+  height: 40px;
 }
-
 
 .email-input-container {
   display: flex;
@@ -654,12 +656,12 @@ height: 40px;
 }
 
 .subscribe-button {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 165px;
-height: 40px;
-cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .subscribe-button:hover {
