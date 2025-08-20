@@ -592,6 +592,13 @@ fill:#ffffff
   display: block;
   margin: 20px auto;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #404bbf;
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close {
@@ -652,6 +659,13 @@ justify-content: center;
 align-items: center;
 width: 165px;
 height: 40px;
+cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #404bbf;
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-send {
