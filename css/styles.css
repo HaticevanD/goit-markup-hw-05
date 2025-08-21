@@ -655,7 +655,6 @@ textarea {
 .subscribe-email:focus,
 .subscribe-email:hover {
   border-color: #4d5ae5;
-  outline: none;
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
