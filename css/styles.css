@@ -505,6 +505,7 @@ footer {
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  padding-left: 32px;
 }
 
 .modal-form-input-content {
@@ -578,7 +579,9 @@ textarea {
 .modal-form-checkbox:checked + .modal-form-checkbox-container {
   background-color: #4d5ae5;
 }
-
+.modal-form-checkbox-container:hover {
+  border-color: #4d5ae5;
+}
 .modal-form-checkbox:checked
   + .modal-form-checkbox-container
   .form-icon-checkbox {
@@ -646,6 +649,15 @@ textarea {
   color: #ffffff;
   width: 264px;
   height: 40px;
+  padding-left: 12px;
+}
+
+.subscribe-email:focus,
+.subscribe-email:hover {
+  border-color: #4d5ae5;
+  outline: none;
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-input-container {
