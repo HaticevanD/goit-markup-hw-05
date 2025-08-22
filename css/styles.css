@@ -33,9 +33,11 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #e7e9fc;
   padding: 24px;
+  position: relative;
 }
 
 address ul li a {
@@ -48,7 +50,8 @@ address ul li a {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1158px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -89,7 +92,6 @@ address ul li a:hover {
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 ul {
   display: flex;
   justify-content: center;
@@ -526,6 +528,7 @@ footer {
   border-color: #4d5ae5;
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .modal-form-input-container {
